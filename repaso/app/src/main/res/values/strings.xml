@@ -1,0 +1,8 @@
+<resources>
+    <!-- Nombre de la aplicación que se muestra en el lanzador y en la barra de título de la aplicación -->
+    <string name="app_name">repaso</string>
+    <!-- Texto de sugerencia que se muestra en el EditText para ingresar texto -->
+    <string name="ingresar_texto">Ingresar texto:</string>
+    <!-- Texto que se muestra en el botón para guardar el texto ingresado -->
+    <string name="guardar">Guardar</string>
+</resources>

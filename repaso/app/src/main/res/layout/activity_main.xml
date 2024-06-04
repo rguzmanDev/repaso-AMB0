@@ -1,0 +1,42 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/fondo"
+    tools:context=".MainActivity">
+
+    <!-- Guideline para centrar los elementos en la pantalla.
+    Se establece a 366dp desde el inicio de la pantalla -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="366dp" />
+
+    <!-- EditText para que el usuario ingrese texto.
+    Se posiciona justo encima de la guideline y se extiende a lo ancho de la pantalla -->
+    <EditText
+        android:id="@+id/etEntrada"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/ingresar_texto"
+        tools:ignore="TouchTargetSizeCheck"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Botón para guardar el texto ingresado.
+    Se posiciona justo debajo de la guideline y se extiende a lo ancho de la pantalla -->
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/guardar"
+        app:layout_constraintTop_toBottomOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
