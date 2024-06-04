@@ -6,13 +6,28 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+    <!-- ImageView que se utilizará para mostrar la imagen capturada.
+    Se posiciona en el centro de la pantalla y tiene un tamaño fijo de 300dp -->
+    <ImageView
+        android:id="@+id/captureImageView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <!-- Botón que se utilizará para iniciar la captura de la imagen.
+    Se posiciona justo debajo del ImageView y se centra horizontalmente en la pantalla -->
+    <Button
+        android:id="@+id/captureImgBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/texto_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/captureImageView"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

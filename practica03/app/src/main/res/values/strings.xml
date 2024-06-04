@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">practica03</string>
+    <string name="texto_btn">Capturar imagen</string>
 </resources>
